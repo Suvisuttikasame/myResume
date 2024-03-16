@@ -1,8 +1,9 @@
 "use client";
-import Image from "next/image";
 import ProjectInfo from "./components/ProjectInfo";
 import BackButton from "../components/BackButton";
 import ProjectImages from "./components/ProjectImages";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 type props = {
   params: { projectName: string };
@@ -92,7 +93,9 @@ export default function SubProject({ params }: props) {
         projectName={params.projectName}
         projectDesc={project[params.projectName]}
       />
-      <ProjectImages images={images[params.projectName]} />
+      <Suspense fallback={<Loading />}>
+        <ProjectImages images={images[params.projectName]} />
+      </Suspense>
     </main>
   );
 }
