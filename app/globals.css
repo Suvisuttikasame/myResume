@@ -482,4 +482,46 @@ body {
   .clip-path-under-line {
     clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
   }
+
+  @keyframes fade-in-animation {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .fade-in {
+    animation: fade-in-animation 0.75s ease-in-out none;
+  }
+  @keyframes fade-out-animation {
+    0% {
+      opacity: 0;
+      transform: scale(2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .fade-out {
+    animation: fade-out-animation 0.75s ease-in-out none;
+  }
+  @keyframes bounce-animate {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    33% {
+      transform: translateY(-25%);
+    }
+    66% {
+      transform: translateY(25%);
+    }
+  }
+  .bounce-animate {
+    animation: bounce-animate 1s ease-in-out none;
+  }
 }
