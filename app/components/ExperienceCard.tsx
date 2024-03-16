@@ -19,7 +19,7 @@ export default function ExperienceCard({
   arrExpCard = [],
 }: props) {
   return (
-    <div className="w-96 h-72 relative rounded-md [transform-style:preserve-3d] transition-all ease-in-out  duration-1000 delay-150 hover:[transform:rotateY(180deg)] max-[400px]:w-11/12 max-[400px]:h-80">
+    <div className="w-96 h-72 relative rounded-md [transform-style:preserve-3d] bounce-animate transition-all ease-in-out  duration-1000 delay-150 hover:[transform:rotateY(180deg)] max-[400px]:w-11/12 max-[400px]:h-80">
       {arrExpCard.map((item, index) => {
         return (
           <FlipedCard

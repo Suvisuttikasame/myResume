@@ -18,7 +18,7 @@ export default function PersonalInfo() {
           }}
         />
       </div>
-      <p className="p-2 w-3/4 text-sm text-justify indent-2.5 hyphens-auto">
+      <p className="p-2 w-3/4 text-sm text-justify indent-2.5 hyphens-auto fade-in">
         This is <span className="font-bold">Nuttayos Suvisuttikasame</span>, a
         full stack developer with experience in warehouse system, system
         analysis, root cause investigation and resource management. I have
@@ -34,7 +34,7 @@ export default function PersonalInfo() {
         time on YouTube. Hopefully, I&apos;ll make many connections in order to
         write a story together.
       </p>
-      <div className="flex text-sm max-[640px]:flex-col">
+      <div className="flex text-sm fade-out max-[640px]:flex-col">
         <div className="mr-24 max-[640px]:mr-0">
           <h2 className="text-lg font-bold">Tools</h2>
           <ul className="list-disc">
