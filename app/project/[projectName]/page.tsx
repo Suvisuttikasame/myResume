@@ -1,4 +1,3 @@
-"use client";
 import ProjectInfo from "./components/ProjectInfo";
 import BackButton from "../components/BackButton";
 import ProjectImages from "./components/ProjectImages";
